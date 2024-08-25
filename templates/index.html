@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABCD123</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">ABCD123</h1>
+        
+        <!-- Form for JSON input -->
+        <form id="jsonForm" class="mb-4">
+            <div class="form-group">
+                <textarea id="jsonInput" class="form-control" placeholder='Enter JSON like {"data": ["A", "1", "c", "5"]}'></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+
+        <!-- Options for filtering -->
+        <div class="options mb-4">
+            <div class="form-check">
+                <input type="checkbox" value="numbers" class="form-check-input filterOption" id="numbersOption">
+                <label class="form-check-label" for="numbersOption">Numbers</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" value="alphabets" class="form-check-input filterOption" id="alphabetsOption">
+                <label class="form-check-label" for="alphabetsOption">Alphabets</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" value="highest_lowercase_alphabet" class="form-check-input filterOption" id="highestLowercaseOption">
+                <label class="form-check-label" for="highestLowercaseOption">Highest Lowercase Alphabet</label>
+            </div>
+        </div>
+
+        <!-- Section to display the response -->
+        <div id="responseContainer" class="alert alert-light" role="alert"></div>
+    </div>
+
+    <!-- Include Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
